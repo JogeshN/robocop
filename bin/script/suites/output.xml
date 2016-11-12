@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0 (Python 3.4.3 on linux)" generated="20161111 07:25:12.880">
+<suite name="Testsuite1" source="/home/mininet/robocop/bin/script/suites/testsuite1" id="s1">
+<suite name="Tc1" source="/home/mininet/robocop/bin/script/suites/testsuite1/tc1.robot" id="s1-s1">
+<test name="Step 1. Add two numbers" id="s1-s1-t1">
+<doc>Given I have Calculaator open
+When I add 2 and 40
+Then result should be 42</doc>
+<tags>
+<tag>example</tag>
+</tags>
+<timeout value="2 minutes"></timeout>
+<status status="FAIL" endtime="20161111 07:25:12.951" critical="yes" starttime="20161111 07:25:12.950">Test case contains no keywords.</status>
+</test>
+<test name="Step 2. Add Negative numbers" id="s1-s1-t2">
+<doc>Given I have Calculator open
+When I add 1 and -2
+Then result should be 42</doc>
+<tags>
+<tag>example</tag>
+</tags>
+<timeout value="2 minutes"></timeout>
+<status status="FAIL" endtime="20161111 07:25:12.955" critical="yes" starttime="20161111 07:25:12.955">Test case contains no keywords.</status>
+</test>
+<doc>Example suite
+need to give some comments.</doc>
+<metadata>
+<item name="Executed At">${HOST}</item>
+<item name="More Info">Ashish</item>
+<item name="Version">2.0</item>
+</metadata>
+<status status="FAIL" endtime="20161111 07:25:12.958" starttime="20161111 07:25:12.921"></status>
+</suite>
+<status status="FAIL" endtime="20161111 07:25:12.964" starttime="20161111 07:25:12.882"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="2" pass="0">Critical Tests</stat>
+<stat fail="2" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="2" pass="0">example</stat>
+</tag>
+<suite>
+<stat name="Testsuite1" id="s1" fail="2" pass="0">Testsuite1</stat>
+<stat name="Tc1" id="s1-s1" fail="2" pass="0">Testsuite1.Tc1</stat>
+</suite>
+</statistics>
+<errors>
+<msg level="ERROR" timestamp="20161111 07:25:12.939">Error in file '/home/mininet/robocop/bin/script/suites/testsuite1/tc1.robot': Importing test library 'SomeLibrary' failed: ImportError: No module named 'SomeLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  /usr/local/bin
+  /usr/lib/python3.4
+  /usr/lib/python3.4/plat-i386-linux-gnu
+  /usr/lib/python3.4/lib-dynload
+  /usr/local/lib/python3.4/dist-packages
+  /usr/lib/python3/dist-packages</msg>
+</errors>
+</robot>
