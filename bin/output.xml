@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20161113 05:51:24.064" generator="Robot 3.0 (Python 2.7.6 on linux2)">
+<suite source="/home/mininet/robocop/bin/script/suites/testsuite1/tc1.robot" id="s1" name="Tc1">
+<test id="s1-t1" name="Step 1. Add two numbers">
+<kw name="Verify Hostname" library="host">
+<doc>verify hostname</doc>
+<arguments>
+<arg>mininnet</arg>
+</arguments>
+<msg timestamp="20161113 05:51:24.410" level="INFO">A
+A1
+A2
+['mininet-vm\n']
+mininnet</msg>
+<msg timestamp="20161113 05:51:24.411" level="FAIL">fail</msg>
+<status status="FAIL" endtime="20161113 05:51:24.411" starttime="20161113 05:51:24.129"></status>
+</kw>
+<doc>Given I have Calculaator open
+When I add 2 and 40
+Then result should be 42</doc>
+<tags>
+<tag>example</tag>
+</tags>
+<timeout value="2 minutes"></timeout>
+<status status="FAIL" endtime="20161113 05:51:24.412" critical="yes" starttime="20161113 05:51:24.128">fail</status>
+</test>
+<test id="s1-t2" name="Step 2. Add Negative numbers">
+<kw name="Verify Hostname" library="host">
+<doc>verify hostname</doc>
+<arguments>
+<arg>mininet-vm</arg>
+</arguments>
+<msg timestamp="20161113 05:51:24.848" level="INFO">A
+A1
+A2
+['mininet-vm\n']
+mininet-vm
+passed</msg>
+<status status="PASS" endtime="20161113 05:51:24.848" starttime="20161113 05:51:24.423"></status>
+</kw>
+<doc>Given I have Calculator open
+When I add 1 and -2
+Then result should be 42</doc>
+<tags>
+<tag>example</tag>
+</tags>
+<timeout value="2 minutes"></timeout>
+<status status="PASS" endtime="20161113 05:51:24.849" critical="yes" starttime="20161113 05:51:24.417"></status>
+</test>
+<doc>Example suite
+need to give some comments.</doc>
+<metadata>
+<item name="Executed At">${HOST}</item>
+<item name="More Info">Ashish</item>
+<item name="Version">2.0</item>
+</metadata>
+<status status="FAIL" endtime="20161113 05:51:24.867" starttime="20161113 05:51:24.065"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="1">Critical Tests</stat>
+<stat fail="1" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="1">example</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Tc1" pass="1">Tc1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
