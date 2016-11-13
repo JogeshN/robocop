@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20161113 05:51:24.064" generator="Robot 3.0 (Python 2.7.6 on linux2)">
+<robot generated="20161113 08:06:14.543" generator="Robot 3.0 (Python 2.7.6 on linux2)">
 <suite source="/home/mininet/robocop/bin/script/suites/testsuite1/tc1.robot" id="s1" name="Tc1">
 <test id="s1-t1" name="Step 1. Add two numbers">
 <kw name="Verify Hostname" library="host">
@@ -7,13 +7,21 @@
 <arguments>
 <arg>mininnet</arg>
 </arguments>
-<msg timestamp="20161113 05:51:24.410" level="INFO">A
+<msg timestamp="20161113 08:06:14.743" level="INFO">The ssh agent is started !!</msg>
+<msg timestamp="20161113 08:06:14.743" level="INFO">started ssh agetn &lt;harness.cli.sshAgent instance at 0xb69d2b0c&gt;</msg>
+<msg timestamp="20161113 08:06:14.743" level="INFO">connecting to ssh agent</msg>
+<msg timestamp="20161113 08:06:15.065" level="INFO">connected the ssh agent, result None</msg>
+<msg timestamp="20161113 08:06:15.065" level="INFO">the cmommand hostname is executed on ssh expect</msg>
+<msg timestamp="20161113 08:06:15.168" level="INFO">getting the output from ssh.</msg>
+<msg timestamp="20161113 08:06:15.176" level="INFO">the output of command is ['mininet-vm\n']</msg>
+<msg timestamp="20161113 08:06:15.176" level="ERROR">The testcase failed.</msg>
+<msg timestamp="20161113 08:06:15.183" level="INFO">A
 A1
 A2
 ['mininet-vm\n']
 mininnet</msg>
-<msg timestamp="20161113 05:51:24.411" level="FAIL">fail</msg>
-<status status="FAIL" endtime="20161113 05:51:24.411" starttime="20161113 05:51:24.129"></status>
+<msg timestamp="20161113 08:06:15.185" level="FAIL">fail</msg>
+<status status="FAIL" endtime="20161113 08:06:15.186" starttime="20161113 08:06:14.742"></status>
 </kw>
 <doc>Given I have Calculaator open
 When I add 2 and 40
@@ -22,7 +30,7 @@ Then result should be 42</doc>
 <tag>example</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="FAIL" endtime="20161113 05:51:24.412" critical="yes" starttime="20161113 05:51:24.128">fail</status>
+<status status="FAIL" endtime="20161113 08:06:15.290" critical="yes" starttime="20161113 08:06:14.741">fail</status>
 </test>
 <test id="s1-t2" name="Step 2. Add Negative numbers">
 <kw name="Verify Hostname" library="host">
@@ -30,13 +38,21 @@ Then result should be 42</doc>
 <arguments>
 <arg>mininet-vm</arg>
 </arguments>
-<msg timestamp="20161113 05:51:24.848" level="INFO">A
+<msg timestamp="20161113 08:06:15.308" level="INFO">The ssh agent is started !!</msg>
+<msg timestamp="20161113 08:06:15.308" level="INFO">started ssh agetn &lt;harness.cli.sshAgent instance at 0xb69d2aec&gt;</msg>
+<msg timestamp="20161113 08:06:15.309" level="INFO">connecting to ssh agent</msg>
+<msg timestamp="20161113 08:06:15.484" level="INFO">connected the ssh agent, result None</msg>
+<msg timestamp="20161113 08:06:15.484" level="INFO">the cmommand hostname is executed on ssh expect</msg>
+<msg timestamp="20161113 08:06:15.552" level="INFO">getting the output from ssh.</msg>
+<msg timestamp="20161113 08:06:15.555" level="INFO">the output of command is ['mininet-vm\n']</msg>
+<msg timestamp="20161113 08:06:15.556" level="INFO">Passed the testcase passed.</msg>
+<msg timestamp="20161113 08:06:15.556" level="INFO">A
 A1
 A2
 ['mininet-vm\n']
 mininet-vm
 passed</msg>
-<status status="PASS" endtime="20161113 05:51:24.848" starttime="20161113 05:51:24.423"></status>
+<status status="PASS" endtime="20161113 08:06:15.556" starttime="20161113 08:06:15.307"></status>
 </kw>
 <doc>Given I have Calculator open
 When I add 1 and -2
@@ -45,7 +61,7 @@ Then result should be 42</doc>
 <tag>example</tag>
 </tags>
 <timeout value="2 minutes"></timeout>
-<status status="PASS" endtime="20161113 05:51:24.849" critical="yes" starttime="20161113 05:51:24.417"></status>
+<status status="PASS" endtime="20161113 08:06:15.557" critical="yes" starttime="20161113 08:06:15.304"></status>
 </test>
 <doc>Example suite
 need to give some comments.</doc>
@@ -54,7 +70,7 @@ need to give some comments.</doc>
 <item name="More Info">Ashish</item>
 <item name="Version">2.0</item>
 </metadata>
-<status status="FAIL" endtime="20161113 05:51:24.867" starttime="20161113 05:51:24.065"></status>
+<status status="FAIL" endtime="20161113 08:06:15.560" starttime="20161113 08:06:14.546"></status>
 </suite>
 <statistics>
 <total>
@@ -69,5 +85,6 @@ need to give some comments.</doc>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20161113 08:06:15.176" level="ERROR">The testcase failed.</msg>
 </errors>
 </robot>
